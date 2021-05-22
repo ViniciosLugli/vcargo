@@ -19,7 +19,7 @@ Its use is simple, and can be changed to your style. For example, a current addi
 ##  Current  modules
 - After init new project:  Copies files from a predetermined folder to this new project.
 
-## Example images:
+## Example:
 
 ![Shell example of vcargo with init module adding new files](./res/Example.gif)
 
