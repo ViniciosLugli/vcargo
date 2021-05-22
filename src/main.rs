@@ -1,12 +1,12 @@
 mod cargo;
-mod customCommands;
+mod custom_commands;
 
 use ansi_term::Colour;
 use cargo::{Cargo, CargoCommand};
-use customCommands::*;
+use custom_commands::*;
 use std::env;
 
-fn checkAndRunCommand(cargo: CargoCommand, args: Vec<String>) -> () {
+fn check_and_run_command(cargo: CargoCommand, args: Vec<String>) -> () {
     if cargo.run(args.clone()) {
         println!(
             "{}",
@@ -37,7 +37,7 @@ fn checkAndRunCommand(cargo: CargoCommand, args: Vec<String>) -> () {
 
 fn main() {
     let args: Vec<String> = env::args().skip(1).collect();
-    let cargoChild: CargoCommand = CargoCommand {
+    let cargo_child: CargoCommand = CargoCommand {
         default_command: "cargo",
     };
 
@@ -47,5 +47,5 @@ fn main() {
         args
     );
 
-    checkAndRunCommand(cargoChild, args);
+    check_and_run_command(cargo_child, args);
 }
