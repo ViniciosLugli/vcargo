@@ -8,3 +8,4 @@ edition = "2018"
 [dependencies]
 ansi_term = "*"
 fs_extra = "*"
+dotenv = "*"

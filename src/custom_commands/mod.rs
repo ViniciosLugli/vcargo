@@ -1,12 +1,15 @@
+use ansi_term::Colour;
 use fs_extra::dir::{copy, CopyOptions};
-use std::env;
 
-pub fn copy_folder(to: &str) -> bool {
-    let _default_path: String = env::var("_DEFAULT_PATH_").unwrap_or("./_DEFAULT_".to_string());
+pub fn copy_folder(_custom_file: &str, to: &str) -> bool {
+    let options = CopyOptions {
+        overwrite: true,
+        copy_inside: true,
+        content_only: true,
+        ..Default::default()
+    };
 
-    let options = CopyOptions::new();
-
-    match copy(_default_path, to, &options) {
+    match copy(&_custom_file, to, &options) {
         Ok(_) => return true,
         Err(_) => return false,
     }
