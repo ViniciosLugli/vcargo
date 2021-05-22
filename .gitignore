@@ -1,0 +1,7 @@
+/target
+.env
+.vscode
+.cargo
+.prettierrc
+Cargo.lock
+.editorconfig
