@@ -1,4 +1,3 @@
-use ansi_term::Colour;
 use fs_extra::dir::{copy, CopyOptions};
 
 pub fn copy_folder(_custom_file: &str, to: &str) -> bool {

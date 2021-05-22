@@ -38,6 +38,8 @@ fn check_and_run_command(cargo: CargoCommand, args: Vec<String>) -> () {
             Colour::Red.bold().paint("Cargo finished with errors!")
         );
     };
+
+    //ADD MODULES:
     if args.len() > 0 {
         if args[0] == "init" {
             println!(
