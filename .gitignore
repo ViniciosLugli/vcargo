@@ -4,3 +4,4 @@
 .cargo
 .prettierrc
 Cargo.lock
+.editorconfig
