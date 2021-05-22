@@ -16,8 +16,12 @@ You can compile it with your own [**cargo**](https://doc.rust-lang.org/cargo/) a
 Its use is simple, and can be changed to your style. For example, a current additional module that when starting a project with the command `vcargo init`,  add files after initialization of project from a predetermined folder, so you can change this module changing the path of the constant `_CUSTOM_FILE_INIT` in the file `main.rs`, other than that, accessing the function`check_and_run_command`. where below the execution of the [**cargo**](https://doc.rust-lang.org/cargo/), or even prior to it, functions can be added ...
 
 
-###  Current  modules:
+##  Current  modules
 - After init new project:  Copies files from a predetermined folder to this new project.
+
+## Example images:
+
+![Shell example of vcargo with init module adding new files](./res/Example.gif)
 
 ## License
 MIT

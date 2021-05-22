@@ -8,7 +8,7 @@ use cargo::{Cargo, CargoCommand};
 use custom_commands::*;
 
 // CHANGE FOR YOU SPECS ----------------------------------------------------------------
-const _CUSTOM_FILE_INIT: &'static str = "C:\\Users\\vinic\\Documents\\codigos\\rust\\_DEFAULT_";
+const _CUSTOM_FILE_INIT: &'static str = "C:\\Users\\vinic\\Documents\\scripts\\rust\\_DEFAULT_";
 // -------------------------------------------------------------------------------------
 
 fn main() {
